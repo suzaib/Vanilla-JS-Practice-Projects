@@ -1,0 +1,139 @@
+*{
+    padding:0;
+    margin:0;
+    border:border-box; /* This makes the padding inclusive in border */;
+}
+
+.mainheading{
+    margin-top:1%;
+    font-size:5vmin;
+}
+
+body{
+    background-color:#548687;
+    text-align:center;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+
+.container{
+    height:65vmin;
+    width:65vmin;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.game{
+    height:90%;
+    width:90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:1.5vmin;
+}
+
+.box{
+    height:18vmin;
+    width:18vmin;
+    border-radius:10%;
+    border:none;
+    box-shadow:0 0 1rem rgba(0,0.0,0.1);
+    color:red;
+    font-size:650%;
+    background-color:#ffffc7;
+}
+
+.reset{
+    width:12vmin;
+    height:8vmin;
+    margin-top:1%;
+    border-radius:19%;
+    border:none;
+    color:#fff;
+    background-color:#191913;
+    font-size:150%;
+}
+
+.new-btn{
+    width:20vmin;
+    height:10vmin;
+    margin-top:5%;
+    border-radius:5vmin;
+    border:none;
+    color:#fff;
+    background-color:#191913;
+    font-size:150%;
+}
+
+.msg{
+    font-size:400%;
+    color:#ffffc7;
+}
+
+.msg-container{
+    height:100vmin;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:1%;
+}
+
+.hide{
+    display:none;
+}
+
+button:hover{
+    cursor:pointer;
+    outline:1px solid white;
+}
+
+@media (max-width:560px) or (max-height:560px){
+    .new-btn,
+    .reset{
+        font-size:10px;
+    }
+
+    .box{
+        font-size:40px;
+    }
+
+    .msg{
+        font-size:25px;
+    }
+}
+
+@media(max-width:280px) or (max-height:280px){
+    .new-btn,
+    .reset{
+        font-size:4px;
+    }
+
+    .box{
+        font-size:20px;
+    }
+
+    .msg{
+        font-size:15px;
+    }
+}
+
+@media (max-width:125px) or (max-height:125px){
+    .new-btn,.reset{
+        font-size:2px;
+    }
+
+    .box{
+        font-size:10px;
+    }
+
+    .msg{
+        font-size:5px;
+    }
+}
+
+
+
