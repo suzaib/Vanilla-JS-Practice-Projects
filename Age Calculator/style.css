@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins',sans-serif;
+    box-sizing:border-box;
+    border:none;
+    outline:none;
+}
+
+.container{
+    width:100vw;
+    min-height:100vh;
+    background:linear-gradient(135deg,#4203a9,#a0bff0);
+    color:#fff;
+    padding:10px;
+}
+
+.calculator{
+    max-width:70%;
+    margin-left:10%;
+    margin-top:10%;
+}
+
+.calculator h1{
+    font-size:5vw;
+}
+
+.calculator h1 span{
+    color:#ffff76;
+}
+
+.input-box{
+    width:50vw;
+    min-width:320px;
+    margin:40px 0;
+    padding:3%;
+    border-radius:10px;
+    background:rgba(255,255,255,0.3);
+    display:flex;
+    align-items:center;
+}
+
+.input-box input{
+    margin-right:3%;
+    padding:14px 50px;
+    width:70%;
+    font-size:18px;
+    border-radius:5px;
+    position:relative;
+}
+
+.input-box button{
+    background:#ffff76;
+    width:25%;
+    font-size:2.2vw;
+    padding:10px 10px;
+    border-radius:5px;
+    font-weight:550;
+    color:#333;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+}
+/* This access the icon of calendar inside the input when type is date */
+.input-box input::-webkit-calendar-picker-indicator{
+    top:7px;
+    left:5px;
+    right:0;
+    bottom:0;
+    width:auto;
+    height:auto;
+    position:absolute;
+    background-position:calc(100%,-10px);
+    background-size:30px;
+    cursor:pointer;
+}
+
+.msg{
+    margin-left:10%;
+    padding:10px;
+}
+
+.msg p{
+    font-size:4vw;
+    font-weight:550;
+}
