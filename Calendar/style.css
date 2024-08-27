@@ -1,0 +1,68 @@
+*{
+    border:none;
+    outline:none;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(45deg,red,blue);
+}
+
+.container{
+    display:flex;
+    margin:10px;
+    padding:10px;
+    width:350px;
+    height:320px;
+}
+
+.box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+}
+
+.container .dateBox{
+    background-color:#fff;
+    width:60%;
+    height:100%;
+    padding:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+.container .dateBox #date{
+    font-size:80px;
+    font-weight:620;
+}
+
+.container .dateBox #day{
+    font-size:25px;
+    font-weight:540;
+}
+
+.container .monthBox{
+    background-color:orange;
+    width:35%;
+    height:100%;
+    padding:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.container .monthBox #month,
+.container .monthBox #year{
+    color:#fff;
+    font-size:25px;
+    font-weight:540;
+}
