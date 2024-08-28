@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+}
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100vw;
+    height:100vh;
+    background-color:bisque;
+}
+
+.container{
+    display:flex;
+    background-color:#fff;
+    border-radius:10px;
+    width:500px;
+    height:60px;
+    padding:10px;
+}
+
+input{
+    text-align:center;
+    width:90%;
+    height:100%;
+    font-size:23px;
+    font-weight:500;
+}
+
+img{
+    cursor:pointer;
+    object-fit:contain;
+    width:55px;
+    height:55px;
+    position:relative;
+    bottom:5px;
+}
