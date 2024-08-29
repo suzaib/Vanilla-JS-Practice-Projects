@@ -11,7 +11,7 @@ const audioSource=song.querySelector('source');
 let currentTrack=1;
 
 //Storing our total tracks numbers
-let totalTracks=7;
+let totalTracks=5;
 
 
 //onloadedmetadata event takes place after the content inside the audio/video file is loaded but before it starts playing
