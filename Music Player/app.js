@@ -7,7 +7,7 @@ const playPrevBtn=document.querySelector(".playPrevBtn");
 const audioSource=song.querySelector('source');
 
 
-//Defining our current track number ( total 6 tracks , if you want more , then simply add another track with title "music7.mp3" in media files);
+//Defining our current track number ( total 6 tracks , if you want more , then simply add another track with title "music6.mp3" in media files);
 let currentTrack=1;
 
 //Storing our total tracks numbers
