@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swapiing');
+
+body{
+    background:#3c3852;
+    font-family:'Courier Prime',monospace;
+}
+
+.stopwatch{
+    width:90%;
+    max-width:600px;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(images/background.png);
+    background-size:cover;
+    background-position:center;
+    text-align:center;
+    padding:40px 0;
+    color:#fff;
+    margin:200px auto 0;
+    box-shadow:0 10px 10px rgba(0,0,0,0.2);
+}
+
+.stopwatch h1{
+    margin-top:10px;
+    font-size:64px;
+    font-weight:300;
+}
+
+.buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.buttons img{
+    width:50px;
+    margin:0 20px;
+    cursor:pointer;
+}
+
+
+
+@media (max-width:320px){
+    .stopwatch{
+        max-height:200px;
+        padding:10px 10px 10px 10px;
+    }
+    .stopwatch h1{
+        font-size:20px;
+        margin:10px auto 10px;
+    }
+
+    .buttons img{
+        width:20px;
+        margin:0px 10px;
+    }
+
+    .buttons img:nth-child(2){
+        width:30px;
+    }
+}
