@@ -18,7 +18,7 @@ form.addEventListener('submit', e => {
         //Set Timeout to make the msg dissapear after 3 seconds
         setTimeout(()=>{
             msg.innerText="";
-        },300000)
+        },3000)
 
         // Then we reset the form (empty its fields)
         form.reset();
