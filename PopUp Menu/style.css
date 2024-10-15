@@ -81,7 +81,8 @@ body{
 
 @media (max-width:700px){
     .container{
-        transform:scale(0.5)
+        transform:scale(0.7) translateY(-30%)
     }
 }
+
 
