@@ -3,17 +3,23 @@
     outline:none;
     font-family:sans-serif;
     box-sizing:border-box;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
 }
 
+body{
+    width:100vw;
+    max-height:100vh;
+    background:#d0eaff;
+}
 .container{
     width:100%;
-    min-height:100vh;
+    max-height:100vh;
     background:#d0eaff;
     display:flex;
     align-items:center;
     justify-content:center;
+    margin-top:60px;
 }
 
 .product{
@@ -34,14 +40,6 @@
     width:100%;
     display:block;
     padding-top:100px;
-}
-
-.details{
-    flex-basis:53%;
-    background:#fff;
-    padding:40px;
-    padding-left:60px;
-    box-shadow:-10px 5px 10px 10px rgba(0,0,0,0.1);
 }
 
 .details{
@@ -192,4 +190,106 @@ form button{
 
 .btn.active{
     background:#2b12e5;
+}
+
+@media (max-width:570px){
+    .details{
+        padding:10px;
+        padding-left:20px;
+        font-size: 10px;
+        width:40vw;
+    }
+    
+    .details h1{
+        font-size:25px;
+    }
+
+    .details h2{
+        font-size:20px;
+    }
+
+    .details h3{
+        font-size:12px;
+        font-weight:500;
+    }
+
+    .sizeSelect p{
+        width:33px;
+        font-size:13px;
+    }
+
+    .sizeSelect span{
+        font-size:10px;
+        padding:2px;
+        position:relative;
+        bottom:0.5px;
+    }
+
+    .colorSelect p{
+        width:40px;
+        font-size:13px;
+    }
+
+    .quantitySelect p{
+        width:60px;
+        font-size:13px;
+    }
+}
+
+@media (max-width:416px){
+    .details{
+        width:43vw;
+    }
+    
+    .details h1{
+        font-size:20px;
+    }
+
+    .details h2{
+        font-size:15px;
+    }
+
+    .details h3{
+        font-size:10px;
+    }
+
+    .sizeSelect{
+        margin-top:20px;
+    }
+
+    .sizeSelect span{
+        margin-right:2px;
+    }
+
+    .colorSelect span{
+        width:10px;
+        height:10px;
+        margin-right:5px;
+    }
+
+    form button{
+        margin-bottom:20px;
+    }
+}
+
+@media (max-width:303px){
+    .details{
+        padding:10px;
+    }
+    .sizeSelect p,
+    .colorSelect p,
+    .quantitySelect p{
+        font-size:9px;
+    }
+
+    .sizeSelect p{
+        margin-right:0px;
+    }
+
+    .sizeSelect span{
+        font-size:8px;
+        position: relative;
+        bottom:2px;
+        margin-right:1px;
+    }
 }
