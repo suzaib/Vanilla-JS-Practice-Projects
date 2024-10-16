@@ -79,3 +79,30 @@ body{
 .incorrect{
     background:#ff9393;
 }
+
+@media (max-width:518px){
+    .app{
+        padding: 10px;
+        padding-top: 20px;
+    }
+    .quiz h2{
+        font-size:15px;
+    }
+
+    .btn{
+        font-size:14px;
+    }
+}
+
+@media (max-width:400px){
+    .app h1{
+        font-size: 25px;
+    }
+    .quiz h2{
+        font-size:11px;
+    }
+
+    .btn{
+        font-size:12px;
+    }
+}
