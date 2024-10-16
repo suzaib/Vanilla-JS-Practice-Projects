@@ -49,12 +49,6 @@ body{
     animation:moveleft 0.5s linear forwards;
 }
 
-@keyframes moveleft{
-    100%{
-        transform:translateX(0);
-    }
-}
-
 i{
     margin:0 20px;
     font-size:25px;
@@ -83,16 +77,78 @@ i{
     animation:anim 5s linear forwards;
 }
 
-@keyframes anim{
-    100%{
-        width:0;
-    }
-}
-
 .toast.error::after{
     background:red;
 }
 
 .toast.invalid::after{
     background:orange;
+}
+
+@keyframes anim{
+    100%{
+        width:0;
+    }
+}
+
+@keyframes moveleft{
+    100%{
+        transform:translateX(0);
+    }
+}
+
+
+@media (max-width:930px){
+    .buttons{
+        margin:20px;
+        max-width:100px;
+        margin-top:50px;
+    }
+    .buttons button{
+        width:80px;
+        height:40px;
+        margin:6px;
+        border-radius:10px;
+    }
+}
+
+@media (max-width:700px){
+    .buttons{
+        margin-top:40px;
+    }
+
+    #toastBox{
+        bottom:20px;
+        right:20px;
+        padding:10px;
+        z-index:-1;
+    }
+
+    .toast{
+        width:300px;
+        height:50px;
+        padding:5px;
+        font-size:12px;
+        margin:15px 0;
+    }
+
+}
+
+@media (max-width:475px){
+    .toast{
+        width:200px;
+    }
+}
+
+@media (max-width:350px){
+    .buttons button{
+        width:60px;
+        font-size:12px;
+    }
+    .toast{
+        padding:0px;
+        width:160px;
+        font-size:10px;
+        height:40px;
+    }
 }
