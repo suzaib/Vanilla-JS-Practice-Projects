@@ -18,11 +18,13 @@ body{
 
 #heading{
     width:100vw;
+    height:100px;
+    align-content:center;
     background-color:#081b31;
     color:#fff;
     padding-top:10px;
     padding-bottom:10px;
-    font-size:5vh;
+    font-size:50px;
 }
 
 .choice{
@@ -78,5 +80,99 @@ img{
     display:inline;
     padding:1rem;
     border-radius:1rem;
+}
+
+@media (max-width:600px){
+    #heading{
+        font-size:40px;
+    }
+    .choices{
+        gap:1rem;
+        margin-top:2rem;
+    }
+    .choice{
+        height:115px;
+        width:115px;
+    }
+    img{
+        height:100px;
+        width:100px;
+    }
+    .score-board{
+        font-size:1.3rem;
+        margin-top:3rem;
+        gap:3rem;
+    }
+    
+    #user-score,#comp-score{
+        font-size:3rem;
+    }
+    #msg{
+        font-size:1.5rem;
+    }
+}
+
+@media (max-width:390px){
+    #heading{
+        font-size:30px;
+        height:70px;
+    }
+    .choices{
+        gap:0px;
+    }
+    .choice{
+        height:100px;
+        width:100px;
+    }
+    img{
+        height:90px;
+        width:90px;
+    }
+    .score-board{
+        font-size:1.2rem;
+        margin-top:2rem;
+        gap:2.5rem;
+    }
+    
+    #user-score,#comp-score{
+        font-size:2.5rem;
+    }
+    #msg{
+        font-size:1.2rem;
+        padding:0.5rem 1rem;
+        font-size:15px;
+    }
+}
+
+@media (max-width:300px){
+    #heading{
+        font-size:25px;
+        height:70px;
+    }
+    .choices{
+        gap:2px;
+    }
+    .choice{
+        height:75px;
+        width:75px;
+    }
+    img{
+        height:70px;
+        width:70px;
+    }
+    .score-board{
+        margin-top:6rem;
+        font-size:1rem;
+        gap:2rem;
+    }
+    
+    #user-score,#comp-score{
+        font-size:2rem;
+    }
+    #msg{
+        padding:0.5rem 1rem;
+        font-size:12px;
+        width:90vw;
+    }
 }
 
