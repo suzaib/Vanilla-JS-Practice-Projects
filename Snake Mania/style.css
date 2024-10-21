@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+}
+
+.body{
+    background:radial-gradient(rgb(253, 227, 32),rgb(136, 175, 20));
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#score{
+    position:absolute;
+    top:30px;
+    right:160px;
+    font-size:49px;
+    font-weight:500;
+    font-family:"Pixelify Sans",sans-serif;
+}
+
+#board{
+    background:linear-gradient(rgb(178, 236, 170),rgb(236, 236, 167));
+    padding:1vmin;
+    width:92vmin;
+    height:90vmin;
+    border:2px solid black;
+    display:grid;
+    grid-template-rows:repeat(18,1fr);
+    grid-template-columns:repeat(18,1fr);
+}
+
+.head{
+    background:linear-gradient(red,yellow);
+    border:2px solid #fff;
+    border-radius:10px;
+    transform:scale(1.15)
+}
+
+.food{
+    background:linear-gradient(red,purple);
+    border-radius:50%;
+}
+
+.snakeBody{
+    background:linear-gradient(135deg,purple,pink);
+    border:1px solid #fff;
+    border-radius:10px;
+}
+
+#highScoreBox{
+    position:absolute;
+    top:30px;
+    left:50px;
+    font-size:49px;
+    font-weight:500;
+    font-family:"Pixelify Sans",sans-serif;
+}
+
+body #loseBox{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    background:red;
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:20px;
+    border:2px solid black;
+    font-family:sans-serif;
+    width:80vw;
+    max-width:700px;
+    height:40%;
+    font-size:35px;
+    font-weight:530;
+    gap:1rem;
+}
+
+#loseBox p{
+    margin-bottom:10px;
+}
+#loseBox button{
+    border-radius:10px;
+    width:65%;
+    height:20%;
+    font-family:sans-serif;
+    background:green;
+    color:#fff;
+    font-size:30px;
+    font-weight:500;
+    border:none;
+}
+
+#loseBox button:hover{
+    cursor:pointer;
+    border:2px solid rgb(7, 39, 15);
+}
+
+body #loseBox #exit{
+    background-color:black;
+}
+
+#loseBox #exit:hover{
+    border:2px solid white;
+}
+
+@media (max-width:1380px){
+    #score{
+        font-size:30px;
+    }
+
+    #highScoreBox{
+        font-size:30px;
+    }
+}
+
+@media (max-width:1170px){
+    #score{
+        right:2%;
+    }
+
+    #highScoreBox{
+        left:2%;
+    }
+
+}
+
+@media (max-width:1050px){
+    #score{
+        font-size:20px;
+    }
+    #highScoreBox{
+        font-size:20px;
+    }
+}
+
+@media (max-width:910px){
+    #highScoreBox{
+        width:95px;
+        text-wrap:wrap;
+        font-weight:400;
+        left:0.5%;
+    }
+}
+
+@media (max-width:790px){
+    #score{
+        font-size:15px;
+        font-weight:400;
+        right:1%;
+    }
+    #highScoreBox{
+        font-size:15px;
+        width:70px;
+    }
+}
+
+@media (max-width:740px){
+    #score{
+        top:1%;
+        right:15%;
+    }
+    #highScoreBox{
+        width:300px;
+        left:12%;
+        top:1%;
+    }
+}
+
+@media (max-width:600px){
+    #score,#highScoreBox{
+        font-size:25px;
+        font-weight:500;
+        top:3%;
+    }
+
+    body #loseBox{
+        height:30%;
+        font-size:25px;
+        font-weight:500;
+        gap:0.5rem;
+    }
+
+    #loseBox button{
+        width:100px;
+        height:18%;
+        font-size:15px;
+        font-weight:500;
+        border:none;
+    }
+}
+
+@media (max-width:410px){
+    #highScoreBox{
+        top:10%;
+        font-size:35px;
+        width:100%;
+        text-align:center;
+        left:0%;
+        font-weight:550;
+    }
+
+    #score{
+        top:90%;
+        font-size:35px;
+        font-weight:550;
+        width:100%;
+        right:0%;
+        text-align:center;
+    }
+
+    body #loseBox{
+        font-size:15px;
+    }
+}
+
+@media (max-width:280px){
+    #score,#highScoreBox{
+        font-size:30px;
+        font-weight:450;
+    }
+}
