@@ -1,1 +1,1 @@
-# Vanilla-JS-Projects
+These are some of my very first projects. They have some very easy projects and some are complex as well for example minesweeper and snake mania. All of them are in vanilla javascript. I have added comments at every needed point as well and all of them are responsive as well.
